@@ -1,2 +1,3 @@
 # -CSE441_PROJECT
-Nguyễn Xuân Lộc, Đỗ Huy Hoàng, Bùi Văn Phú
+Dự án: Bán hàng online.
+Thành viên: Nguyễn Xuân Lộc, Đỗ Huy Hoàng, Bùi Văn Phú.
