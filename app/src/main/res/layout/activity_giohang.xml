@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/toolbargiohang"
         android:title="Giỏ Hàng"
-        android:background=""
+        android:background="#26a14c"
         >
     </Toolbar>
     
