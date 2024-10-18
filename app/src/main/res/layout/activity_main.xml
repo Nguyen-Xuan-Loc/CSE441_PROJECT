@@ -13,44 +13,42 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/txt_giohang"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <Toolbar
                 android:id="@+id/toolbarmanhinhchinh"
-                android:background="#4665ce"
-                app:title="Trang Chính"
                 android:layout_width="match_parent"
-                android:layout_height="?actionBarSize">
-            </Toolbar>
+                android:layout_height="?actionBarSize"
+                android:background="#4665ce"
+                app:title="Trang Chính"></Toolbar>
 
             <ViewFlipper
                 android:id="@+id/viewlipper"
                 android:layout_width="match_parent"
-                android:layout_height="200dp">
-            </ViewFlipper>
+                android:layout_height="200dp"></ViewFlipper>
+
             <LinearLayout
-                android:background="#5992d2"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#5992d2"
+                android:orientation="vertical">
 
                 <TextView
-                    android:text="Sản Phẩm Mới Nhất"
-                    android:layout_margin="5dp"
-                    android:textColor="#a71a04"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Sản Phẩm Mới Nhất"
+                    android:textColor="#a71a04"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerview"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                </androidx.recyclerview.widget.RecyclerView>
+                    android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
             </LinearLayout>
 
         </LinearLayout>

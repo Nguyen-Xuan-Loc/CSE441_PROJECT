@@ -9,7 +9,7 @@
     <Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/toolbargiohang"
+        android:id="@+id/toolbar_giohang"
         android:title="Giỏ Hàng"
         android:background="#26a14c"
         >
@@ -25,7 +25,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textviewthongbao"
+                android:id="@+id/txt_thongbao"
                 android:textSize="30sp"
                 android:text="Giỏ Hàng bạn đang trống"
                 android:layout_gravity="center"
@@ -33,7 +33,7 @@
             <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/listviewgiohang">
+                android:id="@+id/lv_giohang">
             </ListView>
         </FrameLayout>
     </LinearLayout>
@@ -81,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:id="@+id/buttonthanhtoanhang"
+        android:id="@+id/bt_thanhtoanhang"
         android:text="Thanh Toán Giỏ Hàng"
         android:textSize="20sp"
         android:textColor="#26a14c">
@@ -91,7 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:id="@+id/buttontieptucmuahang"
+        android:id="@+id/bt_tieptucmuahang"
         android:text="Tiếp Tục Mua Hàng"
         android:textSize="20sp"
         android:textColor="#26a14c">
