@@ -23,8 +23,9 @@
             android:id="@+id/img_logo"
             android:layout_width="130dp"
             android:layout_height="105dp"
-            tools:srcCompat="@drawable/logo"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo"
+            tools:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/textView"
@@ -45,7 +46,7 @@
 
         <LinearLayout
             android:layout_width="335dp"
-            android:layout_height="371dp"
+            android:layout_height="301dp"
             android:layout_gravity="center"
             android:background="#FDFFAB"
             android:orientation="vertical">
@@ -82,7 +83,7 @@
                         android:layout_gravity="center"
                         android:background="#FFFFFF"
                         android:ems="10"
-                        android:hint="Nhập tên đăng nhập của bạn"
+                        android:hint="Nhập email của bạn"
                         android:inputType="text"
                         android:textAlignment="textStart"
                         tools:ignore="RtlCompat" />
@@ -115,8 +116,9 @@
                         android:background="#FFFFFF"
                         android:ems="10"
                         android:hint="Nhập mật khẩu của bạn"
-                        android:inputType="text"
-                        android:textAlignment="textStart" />
+                        android:textAlignment="textStart"
+                        android:inputType="textPassword"
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -132,19 +134,6 @@
                     android:background="#000000"
                     android:text="Đăng nhập" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="18dp"
-                    android:orientation="vertical"></LinearLayout>
-
-                <TextView
-                    android:id="@+id/txt_quen_mat_khau"
-                    android:layout_width="298dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Quên mật khẩu?"
-                    android:textAllCaps="false"
-                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -171,11 +160,14 @@
             <TextView
                 android:id="@+id/txt_duong_dan_dang_ky"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="105dp"
                 android:layout_gravity="left"
                 android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:text="Đăng ký ngay"
-                android:textStyle="bold" />
+                android:textAllCaps="false"
+                android:textStyle="bold|italic" />
         </LinearLayout>
 
     </LinearLayout>
