@@ -3,9 +3,11 @@ package com.example.cse441_project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -75,6 +77,19 @@ public class AdminActivity extends AppCompatActivity {
                 startActivity(openadmin);
             } else if (id == R.id.nav_add) {
                 replaceFragment(new AddProductFragment());
+            } else if (id == R.id.nav_log_out) {
+                new AlertDialog.Builder(this)
+                        .setTitle("Đăng xuất")
+                        .setMessage("Bạn có chắc chắn muốn đăng xuất không?")
+                        .setPositiveButton("Có", (dialog, which) -> {
+                            Intent intent = new Intent(this, LoginActivity.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
+                            finish();
+                            Toast.makeText(this, "Đã đăng xuất", Toast.LENGTH_SHORT).show();
+                        })
+                        .setNegativeButton("Không", (dialog, which) -> dialog.dismiss())
+                        .show();
             }
 
             drawerLayout.closeDrawer(GravityCompat.START);
