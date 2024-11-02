@@ -1,21 +1,14 @@
-package com.example.cse441_project;
+package com.example.cse441_project.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toolbar;
-import android.widget.ViewFlipper;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.navigation.NavigationView;
+import com.example.cse441_project.R;
 
 public class LoginActivity extends AppCompatActivity {
     private TextView txtDuongDanDangKy;
@@ -28,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
         txtDuongDanDangKy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openSignUp = new Intent(LoginActivity.this,SignUpActivity.class);
+                Intent openSignUp = new Intent(LoginActivity.this, SignUpActivity.class);
                 startActivity(openSignUp);
             }
         });

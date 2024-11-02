@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_weight="1"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Ảnh sản phẩm -->
+
+    <!-- Tên sản phẩm -->
+    <ImageView
+        android:id="@+id/prdDetail_image"
+        android:layout_width="135dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center|center_vertical"
+        android:contentDescription="Product Image"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Tên sản phẩm"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Giá sản phẩm -->
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="Giá sản phẩm"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp" />
+</LinearLayout>
