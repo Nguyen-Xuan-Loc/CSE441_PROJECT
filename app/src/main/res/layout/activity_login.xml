@@ -83,7 +83,7 @@
                         android:layout_gravity="center"
                         android:background="#FFFFFF"
                         android:ems="10"
-                        android:hint="Nhập email của bạn"
+                        android:hint="Nhập tên đăng nhập của bạn"
                         android:inputType="text"
                         android:textAlignment="textStart"
                         tools:ignore="RtlCompat" />
