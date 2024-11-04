@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.cse441_project.model.Giohang;
-import com.example.cse441_project.model.Product;
+import com.example.cse441_project.model.Product2;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -18,9 +18,9 @@ import java.util.ArrayList;
 public class GiohangAdapter extends ArrayAdapter<Giohang> {
     private Context context;
     private ArrayList<Giohang> giohangList;
-    private ArrayList<Product> productList; // Danh sách sản phẩm
+    private ArrayList<Product2> productList; // Danh sách sản phẩm
 
-    public GiohangAdapter(Context context, ArrayList<Giohang> giohangList, ArrayList<Product> productList) {
+    public GiohangAdapter(Context context, ArrayList<Giohang> giohangList, ArrayList<Product2> productList) {
         super(context, 0, giohangList);
         this.context = context;
         this.giohangList = giohangList;
@@ -43,7 +43,7 @@ public class GiohangAdapter extends ArrayAdapter<Giohang> {
         Button btnIncrease = convertView.findViewById(R.id.btn_increase);
 
         // Lấy thông tin sản phẩm từ danh sách sản phẩm
-        Product product = getProductById(currentItem.getProductId());
+        Product2 product = getProductById(currentItem.getProductId());
 
         if (product != null) {
             txtProductName.setText(product.getName());
@@ -77,8 +77,8 @@ public class GiohangAdapter extends ArrayAdapter<Giohang> {
         return convertView;
     }
 
-    private Product getProductById(long productId) {
-        for (Product product : productList) {
+    private Product2 getProductById(long productId) {
+        for (Product2 product : productList) {
             if (product.getProductId() == productId) { // Sử dụng toán tử == để so sánh
                 return product;
             }

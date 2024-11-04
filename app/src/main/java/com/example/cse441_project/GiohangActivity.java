@@ -12,7 +12,7 @@ import android.content.Intent; // Import Intent để chuyển activity
 import android.widget.Toast;
 
 import com.example.cse441_project.model.Giohang;
-import com.example.cse441_project.model.Product;
+import com.example.cse441_project.model.Product2;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,7 +25,7 @@ public class GiohangActivity extends AppCompatActivity {
     private ListView lvGiohang;
     private TextView txtTongtien;
     private ArrayList<Giohang> giohangList;
-    private ArrayList<Product> productList; // Danh sách sản phẩm
+    private ArrayList<Product2> productList; // Danh sách sản phẩm
     private GiohangAdapter adapter;
     private DatabaseReference databaseReference;
 
@@ -128,7 +128,7 @@ public class GiohangActivity extends AppCompatActivity {
                     int stockQuantity = productSnapshot.child("stock_quantity").getValue(Integer.class);
 
                     // Thêm sản phẩm vào danh sách
-                    productList.add(new Product(productId, name, price, imageUrl, stockQuantity));
+                    productList.add(new Product2(productId, name, price, imageUrl, stockQuantity));
                 }
 
                 adapter.notifyDataSetChanged(); // Cập nhật adapter khi danh sách sản phẩm đã tải xong

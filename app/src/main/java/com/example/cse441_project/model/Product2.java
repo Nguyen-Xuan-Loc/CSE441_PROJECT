@@ -1,6 +1,6 @@
 package com.example.cse441_project.model;
 
-public class Product {
+public class Product2 {
     private long productId;
     private String name;
     private String brand;
@@ -10,7 +10,7 @@ public class Product {
     private String imageUrl;
 
     // Constructor đầy đủ
-    public Product(long productId, String name, String brand, String description, double price, int stockQuantity, String imageUrl) {
+    public Product2(long productId, String name, String brand, String description, double price, int stockQuantity, String imageUrl) {
         this.productId = productId;
         this.name = name;
         this.brand = brand;
@@ -21,7 +21,7 @@ public class Product {
     }
 
     // Constructor ngắn gọn để sử dụng trong giỏ hàng
-    public Product(long productId, String name, double price, String imageUrl, int stockQuantity) {
+    public Product2(long productId, String name, double price, String imageUrl, int stockQuantity) {
         this.productId = productId;
         this.name = name;
         this.price = price;
