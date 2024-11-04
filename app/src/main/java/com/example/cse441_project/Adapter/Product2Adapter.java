@@ -20,12 +20,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 
-public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {
+public class Product2Adapter extends RecyclerView.Adapter<Product2Adapter.ProductViewHolder> {
     private Context context;
     private List<Product1> productList1;
     private List<Product1> filteredProductList ;
 
-    public ProductAdapter(Context context, List<Product1> productList1,List<Product1> filteredProductList) {
+    public Product2Adapter(Context context, List<Product1> productList1,List<Product1> filteredProductList) {
         this.context = context;
         this.productList1 = productList1;
         this.filteredProductList = filteredProductList;

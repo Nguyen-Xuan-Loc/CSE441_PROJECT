@@ -1,6 +1,6 @@
 package com.example.cse441_project;
 
-import com.example.cse441_project.Adapter.ProductAdapter;
+import com.example.cse441_project.Adapter.Product2Adapter;
 import com.example.cse441_project.Model.Product1;
 
 import android.annotation.SuppressLint;
@@ -35,7 +35,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private ProductAdapter productAdapter;
+    private Product2Adapter productAdapter;
     private List<Product1> productList1 = new ArrayList<>();
     private List<Product1> filteredProductList = new ArrayList<>();
     private DrawerLayout drawerLayout;
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         loadJsonData();
 
-        productAdapter = new ProductAdapter(this, productList1, filteredProductList);
+        productAdapter = new Product2Adapter(this, productList1, filteredProductList);
         recyclerView.setAdapter(productAdapter);
 
         noProductsMessage = findViewById(R.id.no_products_message);
