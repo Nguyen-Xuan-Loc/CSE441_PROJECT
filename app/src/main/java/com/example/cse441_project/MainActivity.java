@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerViewmanhinhchinh;
     NavigationView navigationView;
     ListView listViewmanhinhchinh;
-
+    
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
