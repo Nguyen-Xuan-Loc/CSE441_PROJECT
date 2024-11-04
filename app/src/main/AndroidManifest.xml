@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -17,26 +16,38 @@
         tools:targetApi="31">
         <activity
             android:name=".LoginActivity"
+<<<<<<< HEAD
+=======
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+>>>>>>> ce27d74c17e148649eb9ff3bdb70e8129b212232
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".MainActivity"
             android:exported="true">
         </activity>
-        <activity
-            android:name=".SignUpActivity"
+=======
+
+        <activity android:name=".ProductListActivity"
             android:exported="true">
         </activity>
-        <activity
-            android:name=".AdminActivity"
-            android:exported="true">
+        <activity android:name=".ProductDetailActivity">
 
         </activity>
+        
+        <activity android:name=".ContactActivity">
+
+        </activity>
+>>>>>>> ce27d74c17e148649eb9ff3bdb70e8129b212232
     </application>
 
 </manifest>
