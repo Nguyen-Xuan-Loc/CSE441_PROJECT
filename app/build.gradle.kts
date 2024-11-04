@@ -8,7 +8,6 @@ android {
     compileSdk = 34
 
 
-
     defaultConfig {
         applicationId = "com.example.cse441_project"
         minSdk = 24
