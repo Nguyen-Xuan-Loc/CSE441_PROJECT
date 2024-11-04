@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FDFFAB"
-    tools:context=".Activity.ProductListActivity">
+    tools:context=".ProductListActivity">
 
     <!-- Topbar với Constraint -->
 

@@ -1,8 +1,8 @@
-package com.example.cse441_project.Activity;
+package com.example.cse441_project;
 
 import com.example.cse441_project.Adapter.ProductAdapter;
 import com.example.cse441_project.Model.Product1;
-import com.example.cse441_project.R;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
@@ -91,6 +90,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if (itemId == R.id.nav_phone) {
                     startActivity(new Intent(MainActivity.this, ProductListActivity.class));
+                }else if(itemId == R.id.nav_contact){
+                    startActivity(new Intent(MainActivity.this, ContactActivity.class));
                 }
                 drawerLayout.closeDrawer(navigationView);
                 return true;

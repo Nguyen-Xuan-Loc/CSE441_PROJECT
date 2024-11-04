@@ -1,10 +1,8 @@
-package com.example.cse441_project.Activity;
+package com.example.cse441_project;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.cse441_project.R;
 
 public class SignUpActivity extends AppCompatActivity {
     @Override

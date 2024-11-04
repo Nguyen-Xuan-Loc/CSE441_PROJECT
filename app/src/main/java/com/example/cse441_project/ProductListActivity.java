@@ -1,4 +1,4 @@
-package com.example.cse441_project.Activity;
+package com.example.cse441_project;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -23,7 +23,6 @@ import java.util.List;
 
 import com.example.cse441_project.Model.Product1;
 import com.example.cse441_project.Adapter.Product1Adapter;
-import com.example.cse441_project.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cse441_project.Activity.ProductDetailActivity;
+import com.example.cse441_project.ProductDetailActivity;
 import com.example.cse441_project.Model.Product1;
 import com.example.cse441_project.R;
 

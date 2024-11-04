@@ -1,4 +1,4 @@
-package com.example.cse441_project.Activity;
+package com.example.cse441_project;
 
 
 import android.content.Intent;
@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.cse441_project.R;
 import com.squareup.picasso.Picasso;
 
 public class ProductDetailActivity extends AppCompatActivity {
