@@ -7,7 +7,6 @@ android {
     namespace = "com.example.cse441_project"
     compileSdk = 34
 
-
     defaultConfig {
         applicationId = "com.example.cse441_project"
         minSdk = 24

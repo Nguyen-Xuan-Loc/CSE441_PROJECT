@@ -12,9 +12,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -44,11 +46,13 @@ public class MainActivity extends AppCompatActivity {
     private EditText searchField;
     private ImageView searchIcon;
     private TextView noProductsMessage;
+    private ImageView cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         drawerLayout = findViewById(R.id.main);
         menuIcon = findViewById(R.id.menu_icon);
@@ -67,6 +71,14 @@ public class MainActivity extends AppCompatActivity {
 
         noProductsMessage = findViewById(R.id.no_products_message);
 
+        cart = findViewById(R.id.cart_icon);
+
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this , GiohangActivity.class));
+            }
+        });
         //Bat su kien cho Navigation
         menuIcon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +104,21 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, ProductListActivity.class));
                 }else if(itemId == R.id.nav_contact){
                     startActivity(new Intent(MainActivity.this, ContactActivity.class));
+                }else if(itemId == R.id.nav_info){
+                    startActivity(new Intent(MainActivity.this, ThongTinActivity.class));
+                }else if(itemId == R.id.nav_logout){
+                    new AlertDialog.Builder(MainActivity.this)
+                            .setTitle("Đăng xuất")
+                            .setMessage("Bạn có chắc chắn muốn đăng xuất không?")
+                            .setPositiveButton("Có", (dialog, which) -> {
+                                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                                finish();
+                                Toast.makeText(MainActivity.this, "Đã đăng xuất", Toast.LENGTH_SHORT).show();
+                            })
+                            .setNegativeButton("Không", (dialog, which) -> dialog.dismiss())
+                            .show();
                 }
                 drawerLayout.closeDrawer(navigationView);
                 return true;

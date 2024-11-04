@@ -2,6 +2,9 @@
 agp = "8.6.0"
 firebaseBom = "33.5.1"
 googleFirebaseAppcheckSafetynet = "<latest-version>"
+firebaseCore = "21.1.1"
+firebaseDatabaseVersion = "20.1.0"
+firebaseStorageVersion = "21.0.1"  # Thay đổi tên biến cho rõ ràng
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -12,6 +15,7 @@ constraintlayout = "2.1.4"
 googleGmsGoogleServices = "4.4.2"
 navigationFragment = "2.8.3"
 navigationRuntime = "2.8.3"
+picasso = "2.71828"
 
 [libraries]
 firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
@@ -29,7 +33,9 @@ activity = { group = "androidx.activity", name = "activity", version.ref = "acti
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-runtime = { group = "androidx.navigation", name = "navigation-runtime", version.ref = "navigationRuntime" }
+picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

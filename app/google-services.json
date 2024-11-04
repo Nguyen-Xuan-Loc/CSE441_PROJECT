@@ -24,44 +24,6 @@
           "other_platform_oauth_client": []
         }
       }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:959650146406:android:c636f3a1ee9baaca8325a7",
-        "android_client_info": {
-          "package_name": "vn.edu.tlu.m2151173813"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB3df3cz4kNUV2ASnAkqdczZgbl9q1lEkk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:959650146406:android:d5059ec17519dd818325a7",
-        "android_client_info": {
-          "package_name": "vn.edu.tlu.m2171173794"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyB3df3cz4kNUV2ASnAkqdczZgbl9q1lEkk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
     }
   ],
   "configuration_version": "1"

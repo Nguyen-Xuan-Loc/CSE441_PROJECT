@@ -47,7 +47,7 @@
 
             <!-- Icon Giỏ hàng -->
             <ImageView
-                android:id="@+id/cart_icon"
+                android:id="@+id/cart_icon1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:contentDescription="Cart Icon"

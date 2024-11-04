@@ -40,6 +40,7 @@ public class ProductListActivity extends AppCompatActivity {
     private Product1Adapter product1Adapter;
     private List<Product1> productList = new ArrayList<>();
     private ImageView back;
+    private ImageView cart;
 
 
     @SuppressLint("MissingInflatedId")
@@ -56,6 +57,14 @@ public class ProductListActivity extends AppCompatActivity {
             }
         });
 
+
+        cart = findViewById(R.id.cart_icon1);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProductListActivity.this , GiohangActivity.class));
+            }
+        });
         sortSpinner = findViewById(R.id.sort_spinner);
         setupSpinner();
 
