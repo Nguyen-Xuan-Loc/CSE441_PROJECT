@@ -123,8 +123,6 @@ public class AdminActivity extends AppCompatActivity {
                     String imageName = productSnapshot.child("imageurl").getValue(String.class);
 
                     if (name != null && price != null && description != null && imageName != null) {
-                        // Log dữ liệu để kiểm tra
-                        Log.d("ImageName", "Image name: " + imageName);
                         // Lấy URL từ Firebase Storage
                         storageRef.child("images/" + imageName).getDownloadUrl().addOnSuccessListener(uri -> {
                             String imageUrl = uri.toString();
