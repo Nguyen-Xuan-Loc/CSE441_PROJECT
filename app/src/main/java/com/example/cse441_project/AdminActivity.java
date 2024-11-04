@@ -19,8 +19,8 @@ import androidx.navigation.NavController;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.cse441_project.adapter.ProductAdapter;
-import com.example.cse441_project.model.ProductList;
+import com.example.cse441_project.Adapter.ProductAdapter;
+import com.example.cse441_project.Model.ProductList;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;

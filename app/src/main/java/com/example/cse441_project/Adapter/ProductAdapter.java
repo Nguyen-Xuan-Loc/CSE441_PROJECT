@@ -1,4 +1,4 @@
-package com.example.cse441_project.adapter;
+package com.example.cse441_project.Adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cse441_project.R;
-import com.example.cse441_project.model.ProductList;
+import com.example.cse441_project.Model.ProductList;
 
 import java.io.IOException;
 import java.net.URL;

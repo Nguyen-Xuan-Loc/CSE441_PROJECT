@@ -1,4 +1,4 @@
-package com.example.cse441_project.model;
+package com.example.cse441_project.Model;
 
 public class Product {
     public long id;

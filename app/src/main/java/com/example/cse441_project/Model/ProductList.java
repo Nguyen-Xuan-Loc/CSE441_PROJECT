@@ -1,4 +1,4 @@
-package com.example.cse441_project.model;
+package com.example.cse441_project.Model;
 public class ProductList {
     private String name;
     private double price;
